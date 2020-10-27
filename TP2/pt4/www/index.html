@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Exemple TP2
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Formulaire</h1>
+    <form method="GET" action="/reponse">
+        <table>
+            <tr>
+                <td>Nom</td>
+                <td colspan="3"><input type="text" name="nom"/></td>
+            </tr>
+            <tr>
+                <td>Prénom</td>
+                <td colspan="3"><input type="text" name="prenom"/></td>
+            </tr>
+            <tr>
+                <td>Âge</td>
+                <td colspan="3"><input type="number" name="age" min="0" max="130"/></td>
+            </tr>
+            <tr>
+                <td>Sexe</td>
+                <td>F<input type="radio" name="genderf"/></td>
+                <td>H<input type="radio" name="genderh"/></td>
+                <td>N/A<input type="radio" name="gendern"/></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="submit" value="Envoyer"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
