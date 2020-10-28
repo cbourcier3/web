@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Exemple TP4
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>Minuteur</h1>
+    <tr>
+        <td><input id='heureChoisie' type='number' min=0 max=24></input></td>
+        <td><input onchange=timerM() id='minuteChoisie' type='number' min=0 max=60></input></td>
+        <td><input onchange=timerS() id='secondeChoisie' type='number' min=0 max=60></input></td>
+        <td><input type='button' onclick=goTimer() value='Go!'></td>
+        <td><input type='button' onclick=stopTimer() value='Stop!'></td>
+        <td><input type='button' onclick=zeroTimer() value='RaZ!'></td>
+
+        <td><input type='button' onclick=newTimer() value='Nouveau'></td>
+        
+    </tr>
+    
+    <h1 id=timer><span id='heure'>00</span>:<span id='minute'>00</span>:<span id='seconde'>00</span></h1>
+</body>
+
+</html>
